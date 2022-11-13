@@ -15,3 +15,7 @@ export const TEXT_FIELD_INVALID_EMAIL = 'Correo electrónico no válido';
 export const TEXT_FIELD_DATE_HIGHER = 'La fecha debe ser menor a la actualidad';
 
 export const ALDREADY_EXIST = 'Ya existe un registro con estos datos';
+
+export const LOCAL_STORAGE_ERROR_SET = 'No se pudo guardar la información en el local storage'
+export const LOCAL_STORAGE_ERROR_GET = 'No se pudo guardar la información en el local storage'
+export const LOCAL_STORAGE_ERROR_REMOVE = 'No se pudo guardar la información en el local storage'

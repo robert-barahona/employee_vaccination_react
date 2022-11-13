@@ -1,0 +1,1 @@
+export const KEY_SESSION = 'KEY_SESSION';

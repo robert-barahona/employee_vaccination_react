@@ -1,10 +1,9 @@
 import { Dispatch } from "@reduxjs/toolkit"
 import { ApiHelper } from '../../../api/ApiHelper';
 import { authActions } from './authSlice';
-import { AlertHelper } from '../../../utils';
+import { AlertHelper, StorageHelper } from '../../../utils';
 import { IUser } from "../../../interfaces";
-import { batch } from "react-redux";
-import { employeeThunks } from "../employee";
+import { KEY_SESSION } from "../../../constants";
 
 const alert = AlertHelper.getInstance();
 
@@ -22,13 +21,11 @@ const logIn = (username: string, password: string): any => {
 
     const user = data[0] as IUser;
 
-    batch(() => {
-      dispatch(authActions.saveSession(user));
-      if (user.id && !user.isAdmin)
-        dispatch(employeeThunks.getEmployeeByIdUser(user.id));
-    })
+    dispatch(authActions.saveSession(user));
 
     alert.hideLoading();
+
+    StorageHelper.setItem(KEY_SESSION, JSON.stringify(user));
 
   }
 }
@@ -41,6 +38,7 @@ const logOut = (): any => {
       text: '¿Está seguro que quiere salir?'
     });
     confirm && dispatch(authActions.logOut());
+    StorageHelper.removeItem(KEY_SESSION);
 
   }
 }
