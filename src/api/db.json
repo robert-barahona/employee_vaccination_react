@@ -1,0 +1,203 @@
+{
+  "employees": [
+    {
+      "ci": "1717154130",
+      "firstNames": "Roberto Alejandro",
+      "lastNames": "Barahona Cevallos",
+      "mail": "robert.barahona.1998@gmail.com",
+      "birthDate": "1998-04-03T05:00:00.000Z",
+      "address": "El Valle de los Chillos",
+      "phone": "0984396922",
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "ci": "1231231231",
+      "firstNames": "Milton Patricio",
+      "lastNames": "Montalvo Pacheco",
+      "mail": "alex@gmail.com",
+      "birthDate": "1222-05-03T05:19:20.000Z",
+      "address": "Ambato",
+      "phone": "0984396922",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "ci": "1231231232",
+      "firstNames": "Johnny Andrés",
+      "lastNames": "Moya Suárez",
+      "mail": "andresito@gmail.com",
+      "birthDate": "1222-05-03T05:19:20.000Z",
+      "address": "Ambato",
+      "phone": "0984396922",
+      "userId": 4,
+      "id": 3
+    },
+    {
+      "ci": "1231231233",
+      "firstNames": "Thalía Alejandra",
+      "lastNames": "Torres Chimbo",
+      "mail": "thaaali@gmail.com",
+      "birthDate": "1222-05-03T05:19:20.000Z",
+      "address": "Quito",
+      "phone": "0984396922",
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "ci": "1231231234",
+      "firstNames": "Mishu Katherine",
+      "lastNames": "Cárdenas Pico",
+      "mail": "begokath@gmail.com",
+      "birthDate": "1222-05-03T05:19:20.000Z",
+      "address": "Cayambe",
+      "phone": "0984396922",
+      "userId": 6,
+      "id": 5
+    },
+    {
+      "ci": "1231231235",
+      "firstNames": "Kevin Hernán",
+      "lastNames": "Mina Puruncajas",
+      "mail": "kevinminey97@gmail.com",
+      "birthDate": "1222-05-03T05:19:20.000Z",
+      "address": "El Valle de los Chillos",
+      "phone": "0984396922",
+      "userId": 7,
+      "id": 6
+    },
+    {
+      "ci": "1231231236",
+      "firstNames": "José Antonio",
+      "lastNames": "Nuñez Amores",
+      "mail": "jose123@mail.com",
+      "address": "",
+      "birthDate": null,
+      "phone": "",
+      "userId": 8,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "isAdmin": true
+    },
+    {
+      "username": "robert.barahona.1998@gmail.com",
+      "password": "1717154130",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "username": "alex@gmail.com",
+      "password": "1231231231",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "username": "andresito@gmail.com",
+      "password": "1231231232",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "username": "thaaali@gmail.com",
+      "password": "1231231233",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "username": "begokath@gmail.com",
+      "password": "1231231234",
+      "isAdmin": false,
+      "id": 6
+    },
+    {
+      "username": "kevinminey97@gmail.com",
+      "password": "1231231235",
+      "isAdmin": false,
+      "id": 7
+    },
+    {
+      "username": "jose123@mail.com",
+      "password": "1231231236",
+      "isAdmin": false,
+      "id": 8
+    }
+  ],
+  "vaccines": [
+    {
+      "name": "Sputnik"
+    },
+    {
+      "name": "AstraZeneca"
+    },
+    {
+      "name": "Pfizer"
+    },
+    {
+      "name": "Jhonson&Jhonson"
+    }
+  ],
+  "vaccineStatus": [
+    {
+      "date": null,
+      "doses": "",
+      "isVaccinated": false,
+      "vaccine": "",
+      "employeeId": 1,
+      "id": 1
+    },
+    {
+      "date": null,
+      "doses": "",
+      "isVaccinated": false,
+      "vaccine": "",
+      "employeeId": 2,
+      "id": 2
+    },
+    {
+      "date": "2020-10-11T05:00:00.000Z",
+      "doses": "3",
+      "isVaccinated": true,
+      "vaccine": "Pfizer",
+      "employeeId": 3,
+      "id": 3
+    },
+    {
+      "date": "2021-11-11T05:00:00.000Z",
+      "doses": "2",
+      "isVaccinated": true,
+      "vaccine": "Pfizer",
+      "employeeId": 4,
+      "id": 4
+    },
+    {
+      "date": null,
+      "doses": "",
+      "isVaccinated": false,
+      "vaccine": "",
+      "employeeId": 5,
+      "id": 5
+    },
+    {
+      "date": "2021-01-01T05:00:00.000Z",
+      "doses": "3",
+      "isVaccinated": true,
+      "vaccine": "Sputnik",
+      "employeeId": 6,
+      "id": 6
+    },
+    {
+      "date": "2020-03-03T05:00:00.000Z",
+      "doses": "2",
+      "isVaccinated": true,
+      "vaccine": "Sputnik",
+      "employeeId": 7,
+      "id": 7
+    }
+  ]
+}

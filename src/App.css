@@ -1,0 +1,47 @@
+.pointer {
+    cursor: pointer;
+}
+
+.h-full {
+    height: 100vh;
+}
+
+.hide-onxs {
+    display: inline-flex;
+}
+
+.max-lines-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-lines: 1;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.swal2-container {
+    z-index: 100000000 !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .hide-onxs {
+        display: none;
+    }
+}
