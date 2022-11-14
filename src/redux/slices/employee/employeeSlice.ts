@@ -19,7 +19,9 @@ export const employeeSlice = createSlice({
   initialState: initialState,
   reducers: {
     addEmployee: (state, action: PayloadAction<IEmployee>) => {
-      if (!state.employeesList) return;
+      if (!state.employeesList) {
+        state.employeesList = [];
+      }
       const exist = state.employeesList.find(e => e.id === action.payload.id);
       if (exist) return;
       state.employeesList.push(action.payload);
@@ -62,7 +64,6 @@ export const employeeSlice = createSlice({
       const endDate = moment(date2).format('YYYY-MM-DD');
 
       state.employeesList = list.filter(e => {
-
         const vaccineDate = moment(e.vaccineStatus?.date).format('YYYY-MM-DD');
         // Condition if is vaccinated
         const condition1 = typeof isVaccinated === 'boolean' ? e.vaccineStatus?.isVaccinated === isVaccinated : true;
