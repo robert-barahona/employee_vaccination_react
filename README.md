@@ -1,3 +1,4 @@
+
 # Prueba técnica - React Inventario de Vacunación de Empleados
 
 En este proyecto he utilizado json-server para la somulación de un backend. A continuación describo los pasos para ejecutar la aplicación correctamente.
@@ -32,3 +33,28 @@ electrónico y la cédula como contraseña.
 `Contraseña: 1717154130`
 
 En el archivo `src/api/db.json` está la base de datos de todos los usuarios creados.
+
+
+# Proceso de desarrollo
+
+#### 1. Diseño y creación de la estructura de la base de datos json
+
+#### 2. Creación del ApiHelper Para realizar las peticiones al servicio
+
+#### 3. Creación de las interfaces de las respuestas del Api
+
+#### 4. Instalación de Redux y creación del store
+
+#### 5. Instalación de bootstrap y material UI para el diseño
+
+#### 6. Instalación de react-router-dom y creación de la navegación
+
+#### 7. Creación de la pantalla del Login
+
+#### 8. Creación de la pantalla para el CRUD de empleados (Administrador)
+
+#### 9. Creación de la pantalla para actualizar los datos (Empleado)
+
+#### 10. Creación de la pantalla para filtrar empleados (Administrador)
+
+#### 11. Pruebas
